@@ -7,7 +7,6 @@ Es un código simple y básico que aprendí a hacer, es útil si quieres alcanza
 
 GTAIII
 https://www.youtube.com/watch?v=Xo8EQIwq3tI
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Xo8EQIwq3tI" frameborder="0" allowfullscreen></iframe>
 
 GTA Vice City
 https://www.youtube.com/watch?v=69SaisIKUIQ
