@@ -1,0 +1,25 @@
+SCRIPT_START // entrada de codigo
+{ // se abre el código
+NOP // código operacional, sin NOP, no funciona nada
+LVAR_INT player CREATE_COLLECTABLE1 //Esto permite que el script pueda usar funciones enteras (nombres de funciones que funcionan como numeros binarios, si tienen uso es 1 y si no tienen uso es 0) de manera local (es decir, solamente tiene utilidad en las funciones de este script), player aquí es una función 1. LVAR_ es como la plantilla del código
+LVAR_FLOAT x y z //Variable flotante, aquí se coloca las coordenadas dinamicas que son cifras
+ 
+y = 0.0 // y es una coordenada, aún no tiene función hasta entrar a gen_paq
+ 
+GET_PLAYER_CHAR 0 player // Esta función es para que el código detecte que 0 es player (el jugador)
+ 
+gen_paq: // El nombre del código
+WAIT 0 // ejecución del código
+ 
+ IF IS_KEY_PRESSED VK_KEY_T // si la tecla T se presiona y
+ AND IS_KEY_PRESSED VK_KEY_P  // la tecla P se presiona, generar paquete
+   WAIT 100 // Espera 0,1 segundo
+   PRINT_HELP_STRING "Paquete colocado" // texto
+   GET_PLAYER_COORDINATES 0 x y z // Esto es para que la función tome al jugador y las coordenadas dinamicas de 0
+   y += 3.0 // el código ya está funcionando, se configura la coordenada y a 3.0 para que aparezca cerca de el jugador
+   CREATE_COLLECTABLE1 x y z // aparecer paquete en las coordenadas dinámicas
+ENDIF // terminó la condición, se cierra y inicia nuevamente como bucle
+GOTO gen_paq // inicia el código de nuevo
+ 
+} // llamada del codigo, se cierra aquí de manera interna
+SCRIPT_END // cierre de código
