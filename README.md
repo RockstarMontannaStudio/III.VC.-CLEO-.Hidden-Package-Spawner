@@ -1,5 +1,5 @@
 # English: [III|VC - CLEO] Hidden package generator
-This code is for GTA Vice City and GTAIII. Makes if to press the keys T + P, you can generate a hidden package or more than 1. The code has been tested in the versión 1.0 of the games
+This code is for GTA Vice City and GTAIII. Makes if to press the keys T + P, you can generate a hidden package or more than 1. The code has been tested in the version 1.0 of the games
 
 Is a simple and basic code which i learned to make, is useful if you can to reach the 100 hidden packages, to make money. Is needed to have cleo to make it work.
 
