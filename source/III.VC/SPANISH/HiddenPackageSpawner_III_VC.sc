@@ -1,0 +1,25 @@
+SCRIPT_START
+{
+NOP
+LVAR_INT player CREATE_COLLECTABLE1 
+LVAR_FLOAT x y z
+ 
+y = 0.0
+ 
+GET_PLAYER_CHAR 0 player
+ 
+spawn_package:
+WAIT 0
+ 
+ IF IS_KEY_PRESSED VK_KEY_T
+ AND IS_KEY_PRESSED VK_KEY_P
+   WAIT 100
+   PRINT_HELP_STRING "Paquete creado"
+   GET_PLAYER_COORDINATES 0 x y z 
+   y += 3.0 
+   CREATE_COLLECTABLE1 x y z 
+ENDIF 
+GOTO spawn_package
+ 
+}
+SCRIPT_END 
